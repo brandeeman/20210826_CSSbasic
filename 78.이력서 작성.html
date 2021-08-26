@@ -1,0 +1,88 @@
+<!-- text 바닥 고정하는 법? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            background-color: aquamarine;
+            min-height: 300px;
+        }
+
+        .header h1 {
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .logo {
+            width: 300px;
+            height: 300px;
+            border-radius: 70%;
+            overflow: hidden;
+        }
+
+        .img-circle {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .primary {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Hi, My Name is Taejun Song</h1>
+    </div>
+
+    <aside class="side">
+        <div class="logo">
+            <img class="img-circle" src="/img_forest.jpg" alt="profile photo">
+        </div>
+
+        <ul class="primary">
+            <li class="first"><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Top</a></li>
+        </ul>
+
+    </aside>
+</body>
+
+</html>

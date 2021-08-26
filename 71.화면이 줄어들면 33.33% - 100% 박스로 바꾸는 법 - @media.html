@@ -1,0 +1,63 @@
+<!-- 화면이 줄어들면 33.33% -> 100% 박스로 바꾸는 법 : @media -->
+<!-- '그리드(grid) 시스템'이라고 한다. -->
+<!-- 질문 : box-container -->
+<!-- 질문 : display: block을 굳이 써줘야 하나? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            /* float:left를 더 이상 안 쓴다는 의미 */
+            display: block;
+        }
+
+        .box {
+            float: left;
+            /* 시작은 가로로 배치 */
+            width: 33.33%;
+            /* 3등분 */
+            height: 200px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            /* padding: 20px; */
+        }
+
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+
+            /* 0~600px 까지는 이것을 적용된다. */
+            .box-container {
+                float: none;
+                /* 아무것도 적용이 안 된 값 */
+            }
+
+            .box {
+                width: 100%;
+                /* 화면이 줄어들면 박스를 100%로 만들어라. */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

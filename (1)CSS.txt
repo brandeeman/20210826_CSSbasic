@@ -1,0 +1,265 @@
+001.html
+CSS 적용하는 법 : style
+-설명
+CSS란? html을 예쁘게 꾸며주기 위한 용도
+순서(시계 방향) : Top right bottom left
+
+002.html
+'*'의 의미 : 전체 적용
+
+004.html
+class를 사용하는 법 : class, .
+-설명
+하나의 '속성'에 여러 '클래스'를 줄 수 있다.
+
+005.html
+'id'를 사용하는 법 : id, #
+-설명
+id : 한 군데 속성만 적용할 때 주로 사용
+
+006(1).html
+하위 선택자 : a b{} : a 선택자 안 모든 b에 적용
+
+006(2).html
+자식 선택자 : a>b : a 선택자 바로 밑 하나의 b에만 적용
+-설명
+바로 밑에 없으면 적용되지 않는다.
+
+006(3).html
+class에 '하위 선택자' 주기
+
+006(4).html
+<!-- id에 '하위 선택자' 주기 -->
+
+007(1).html
+인접 형제 선택자 : 실무에서 사용 잘 안 함 : a+b
+
+007(2).html
+일반 형테 선택자 : 실무에서 사용 잘 안 함 : a~b
+
+008.html
+특정  속성에만 style 적용 방법 : a[href], input[type="text"]
+-설명
+속성 선택자
+여러 방법 : CSS 9p
+자주 쓰인다. 예)특정 체크 박스에만 적용한다고 했을 때 적용이 된다.
+
+009(1).html
+마우스를 갔다대었을 때 효과 발생 - a:hover 등 - : - CSS 10p
+
+009(2).html
+CSS 10p 마우스를 갔다대었을 때 효과 발생 : 방문한 적 없는 링크(:link), 방문한 적 있는 링크(:visited), 
+마우스를 클릭했을 때(:active), 포커스 되었을 때(:focus)
+
+009(3).html
+첫번째 요소(:first), 마지막 요소(:last) : ul>li:first
+안 먹힘;;
+
+009(4).html
+첫번째 자식에 적용(:first-child), 마지막 자식(:last-child) : ul>li:first-child
+
+009(5).html
+원하는 번째 자식에게 적용하고 싶을 때 : ul>li:nth-child(3)
+
+009(6).html
+홀수 번째 자식에게 적용하고 싶을 때 : ul>li:nth-child(3)
+
+012.html
+따로 CSS 파일을 만드는 법 : link rel, href
+<!-- 실무에서 쓰는 CSS : 따로 CSS 파일을 만드는 법 -->
+
+013.html
+색상 넣는 법. 팔레트를 이용할 수 있다. : color, background-color
+-설명
+1.직접 넣는 방식 2.rgb 방식 3.rgb-a 방식 4.Hex 방식 : #000000 ~ #ffffff 5.hsla 방식 : 색조(hue). 채도(saturation). 밝기(lightness). 투명도(alpha)
+
+014.html
+background에 이미지를 넣는 법 : background-image: url
+
+015.html
+이미지를 반복해서 채우는 법 : backgound-reapeat
+-설명
+repeat-x, repeat-y, no-repeat
+
+016.html
+배경에 이미지 위치를 지정하는 법 : background-position : 오른쪽 위
+
+016(2).html
+배경 화면에 스크롤 해도 위치를 고정하는 법 :  background-attachment: fixed
+
+016(3).html
+배경이미지가 스크롤 되면 사라지는 법 : background-attachment: scroll
+
+017.html
+[016(1)의 다른 표현]
+
+---border---------------------------------------------------------------------------
+018(0).html
+border 기본 셋팅 : 1px solid red
+
+018(1).html
+테두리 주는 법 : border-style : border 종류들 : 점선. 실선. 그림자 등등
+
+018(2).html
+동서남북 테두리 다르게 주는 법 : border
+
+019.html
+border 굵기 주는 법 : border-width
+
+020.html
+각 면들 따로 border 굵기 주는 법
+
+021.html
+border 색깔 주는 법 : border-color
+
+023.html
+border 높이. 넓이 주는 법 : width, height
+
+024.html
+border를 둥글게 만드는 법 : border-radius
+
+025.html
+Content, Border, Padding, margin에 대하여
+
+026.html
+border 밖 테두리. 잘 쓰이지 않는다. : outline
+
+---text ---------------------------------------------------------------------------
+027.html
+text 색깔 넣는 법
+
+028(1).html
+text 중간, 왼쪽, 오른쪽 쓰는 법 : center, left, right
+
+028(2).html
+text 양쪽 정렬(양 끝에 맞춤) 하는 법 : justify
+
+029.html
+text에 줄을 긋는 선 : text-decoration
+
+030.html
+text : 대문자. 소문자. 단어의 첫 글자만 대문자로 바뀌게 하는 법 : text-transform
+
+031.html
+text에 그림자 효과 주는 법 : text-shadow
+
+032.html
+text에 font 주는 법1 : font-family
+(설명 따로 넣기)
+
+033.html
+font 이탤릭체 주는 법 : italic, oblique
+
+034.html
+font의 굵기 주는 법 : font-weight
+
+035.html
+font 크기 주는 법 : font-size
+
+036.html
+font : em 단위 = 16px
+-설명
+크롬의 기본 단위 : 16px
+디자이너가 쓰는 단위. 대형 TV 같은 곳 때문에
+
+037.html
+구글 제공 font 사용하는 법(글씨체가 이쁘다.) : link
+-설명
+자세히 : https://travelbeeee.tistory.com/390
+
+038.html
+link 색깔 다양하게 주는 법 :(a:link)(a:visited)(a:hover)(a:active)
+
+039.html
+마우스 화살 모양 변경 하는 법(그곳의 특화된 화살 모양으로 변경)
+
+040.html
+ul li(list) 앞에 나오는 기호에 대한 디자인 주는 법 : list-style-type
+
+041(1).html
+테이블 '짝수'에만 스타일 적용하는 법  : even
+
+041(2).html
+테이블 '홀수'에만 스타일 적용하는 법  : odd
+
+042(1).html
+화면에서 사라지게 하는 법1(공간의 크기도 사라짐) : display:none
+-설명
+화면에서 안 보이고 공간의 크기도 사라진다.
+
+042(2).html
+화면에서 사라지게 하는 법2 : 공간의 크기는 존재 : visibility: hidden
+-설명
+화면에는 안 보이는데 공간의 크기만큼 존재
+
+042(3).html
+화면에서 보이게 하는 법 : display:block
+
+043.html
+html 요소를 '특정 위치'에 위치 시킨다. : position: stactic
+
+044(1).html
+위치를 이동하는 법 : positon : relative
+-설명
+position: relative : static(기본) 위치부터 계산한다.
+방향 : top, bottom, left, right
+
+044(2).html
+위. 아래 동등한 크기의 table 만드는 법 : position : absolute
+
+045.html
+화면이 바뀌어도 고정된 위치 지정하는 법 : position: fixed
+-설명
+여기 예시 : 여기서는 바닥에 고정시키는 법 설정
+
+046(1).html
+table 안에 table 상자 만드는 법 : positon: absolute
+
+046(2).html
+오른쪽 상위 박스 안에 x 만드는 법 : position: absolute
+
+047.html
+스크롤 할 때 내려오면서 위에 고정하는 법 : position: sticky
+
+051(1).html
+글자 수가 넘어갈 때 자동으로 scroll 만들어 주는 방법 : overflow: auto
+
+051(2).html
+overflow에 scroll이 사라지게 하는 법 : overflow: hidden
+
+052.html
+scroll x축, y축 주는 법 : overflow x축. y축
+
+056(1).html
+'div'를 '가로'로 배열하는 법 : float : left
+
+056(2).html
+clearfix ::
+->다음에 나오는 애에게 적용시키겠다는 의마
+
+062.html
+'웹사이트' 머리부터 발끝까지 만드는 법 : 반응형 웹 적용 
+-설명
+body, header, navbar, aside, main, footer
+
+063.html
+웹사이트 '크기'에 따른 반응형 웹 사이트 만드는 법 : @media
+
+064(1).html
+화면이 줄어들면 33.33% -> 100% 박스로 바꾸는 법 : @media
+
+064(2).html
+float: none 이란? 아무것도 적용 안 된 값
+
+064(3).html
+float:left를 더 이상 사용 안 쓰고 싶을 때 : clear:both
+
+064(4).html
+box-sizing이란? (모든) 대부분 써준다.
+-설명
+박스의 크기를 어떤 것을 기준으로 계산할지 정하는 속성
+자세한 설명 : https://www.codingfactory.net/10630
+
+
+
+

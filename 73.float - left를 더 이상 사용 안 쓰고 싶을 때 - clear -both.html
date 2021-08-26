@@ -1,0 +1,57 @@
+<!-- float:left를 더 이상 사용 안 쓰고 싶을 때 : clear:both -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            /* float:left를 더 이상 안 쓴다는 의미 */
+            display: block;
+        }
+
+        .box {
+            float: left;
+            width: 33.33%;
+            height: 200px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            /* padding: 20px; */
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+
+            /* 0~600px 까지는 이것이 적용된다. */
+            .box-container {
+                float: none;
+                /* 아무것도 적용이 안 된 값 */
+            }
+
+            .box {
+                width: 100%;
+                /* 화면이 줄어들면 박스를 100%로 만들어라. */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

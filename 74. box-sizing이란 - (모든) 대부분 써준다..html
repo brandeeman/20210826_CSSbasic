@@ -1,0 +1,30 @@
+<!-- box-sizing이란? (모든) 대부분 써준다. -->
+<!-- 박스의 크기를 어떤 것을 기준으로 계산할지 정하는 속성 -->
+<!-- 자세한 설명 : https://www.codingfactory.net/10630 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 여기는 border 기준 */
+            /* 모든 CSS는 이것을 써준다. 그래야 화면이 잘 나온다. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

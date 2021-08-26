@@ -1,0 +1,40 @@
+<!-- 'div'를 '가로'로 배열하는 법 : float : left -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .img-container {
+            float: left;
+            /* 왼쪽부터 가로로 배열 */
+            width: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="img_5terre.jpg" alt="Italy" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="img_forest.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!-- 오른쪽 상위 박스 안에 x 만드는 법 : position: absolute -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.relative {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>position: absolute;</h2>
+
+    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+        positioned relative to the viewport, like fixed):</p>
+
+    <div class="relative">
+        <div style="position:absolute;right:5px">X</div>
+        <!-- 오른쪽 상위 x박스 만드는 법 -->
+    </div>
+
+</body>
+
+</html>

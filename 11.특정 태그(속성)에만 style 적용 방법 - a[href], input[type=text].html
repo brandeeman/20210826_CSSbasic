@@ -1,0 +1,36 @@
+<!-- 특정 태그(속성)에만 style 적용 방법 : a[href], input[type="text"] -->
+<!-- 속성 선택자 -->
+<!-- 여러 방법 : CSS 9p -->
+<!-- 자주 쓰인다. 예)특정 체크 박스에만 적용한다고 했을 때 적용이 된다. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* E[attr] 형식*/
+        a[href] {
+            color: black;
+        }
+
+        /* E[attr="val"] 형식*/
+        input[type="text"] {
+            /* 속성 값이 공백이 없으면 쌍따옴표를 빼도 된다. */
+            width: 200px;
+            border: 1px solid #add;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/link">링크</a><br>
+    <input type="text">
+    <input type="email">
+</body>
+
+</html>

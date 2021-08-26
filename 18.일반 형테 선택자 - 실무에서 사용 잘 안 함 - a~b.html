@@ -1,0 +1,37 @@
+<!-- 일반 형테 선택자 : 실무에서 사용 잘 안 함 : a~b -->
+<!-- 일반 형제 선택자 : 같은 라인 모든 옆 라인에 적용-->
+<!-- 여러 개의 ul이 있을 때 '형제' 선택자를 쓴다. 8p -->
+<!-- 실무에서 거의 사용 안함. 왜? class 등을 주면 되니까-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 일반 형제 선택자 */
+        h1~ul {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li>ul1-li</li>
+        </ul>
+        <h1>h1</h1>
+        <ul>
+            <li>ul2-li</li>
+        </ul>
+        <ul>
+            <li>ul3-li</li>
+        </ul>
+    </section>
+</body>
+
+</html>
